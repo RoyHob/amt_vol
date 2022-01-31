@@ -78,7 +78,7 @@ class LoginState extends State<Login> {
 
           const SizedBox(height: 12),
           SizedBox(
-            width: 150,
+            width: 50,
             child: TextButton(
               onPressed: () {},
               child: const Text("Forget password?", style: TextStyle(color: Colors.black)),
