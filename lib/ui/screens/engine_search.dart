@@ -57,9 +57,6 @@ class _EngineSearchState extends State<EngineSearch> {
                     title: Text(engineList[index]),
                     trailing: Icon(Icons.arrow_right),
                   ),
-                  Divider(
-                    height: 29,
-                  ),
                 ],
               );
             },
