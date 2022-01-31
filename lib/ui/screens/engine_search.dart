@@ -44,7 +44,9 @@ class _EngineSearchState extends State<EngineSearch> {
             ),
             child: TextField(
               onChanged: (value) {
-                engineList = engineList.where((element) => element.contains(value)).toList();
+                setState(() {
+                  engineList = engineList.where((element) => element.contains(value)).toList();
+                });
               },
               controller: searchController,
               textAlign: TextAlign.start,
