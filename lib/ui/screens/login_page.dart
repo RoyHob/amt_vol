@@ -81,7 +81,7 @@ class LoginState extends State<Login> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
-                width: 50,
+                width: 150,
                 child: TextButton(
                   onPressed: () {},
                   child: const Text("Forget password?", style: TextStyle(color: Colors.black)),
