@@ -35,7 +35,7 @@ class _EngineSearchState extends State<EngineSearch> {
         body: Column(
       children: [
         Container(height: 100, width: 150, child: Image.asset("lib/assets/amtrac.png")),
-        SizedBox(height: 10),
+        SizedBox(height: 20),
         Text(
           "AMTRAC Service",
           style: TextStyle(color: Colors.blue, fontWeight: FontWeight.bold),
