@@ -20,7 +20,7 @@ class LoginState extends State<Login> {
       padding: const EdgeInsets.symmetric(horizontal: 50),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(height: 200, width: 200, child: Image.asset("lib/assets/amtrac.png")),
           const SizedBox(
