@@ -49,7 +49,7 @@ class _EngineSearchState extends State<EngineSearch> {
                 fillColor: Colors.grey,
                 prefixIcon: Icon(Icons.search),
                 border: InputBorder.none,
-                hintText: "Search",
+                hintText: "Search...",
               ),
             ),
           ),
