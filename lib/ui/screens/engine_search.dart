@@ -15,22 +15,22 @@ class _EngineSearchState extends State<EngineSearch> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        body: ListView.builder(
-      itemCount: engineList.length,
-      itemBuilder: (context, index) {
-        return Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Row(
+        body: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+        ListView.builder(
+          itemCount: engineList.length,
+          itemBuilder: (context, index) {
+            return Row(
               children: [
                 Text(engineList[index]),
                 Spacer(),
                 Icon(Icons.arrow_right),
               ],
-            ),
-          ],
-        );
-      },
+            );
+          },
+        ),
+      ],
     ));
   }
 }
