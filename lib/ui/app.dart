@@ -18,10 +18,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // home: const Login(),
       initialRoute: logInPage,
       onGenerateRoute: (settings) {
-        if (settings.arguments == engineSearchPage) {
+        if (settings.name == engineSearchPage) {
           return MaterialPageRoute(builder: (context) => EngineSearch());
 
           return MaterialPageRoute(builder: (context) => Login());
