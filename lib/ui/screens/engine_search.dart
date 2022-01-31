@@ -34,6 +34,7 @@ class _EngineSearchState extends State<EngineSearch> {
     return Scaffold(
         body: Column(
       children: [
+        Container(height: 100, width: 150, child: Image.asset("lib/assets/amtrac.png")),
         Padding(
           padding: const EdgeInsets.only(top: 10.0),
           child: Container(
