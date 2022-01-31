@@ -25,7 +25,7 @@ class LoginState extends State<Login> {
           // Image.asset("lib/assets/amtrac.png"
           // ),
           const SizedBox(
-            height: 20,
+            height: 40,
           ),
           const Text(
             "Sign in",
