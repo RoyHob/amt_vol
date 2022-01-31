@@ -5,6 +5,8 @@ class EngineSearch extends StatefulWidget {
 }
 
 class _EngineSearchState extends State<EngineSearch> {
+  final searchController = TextEditingController();
+
   List<String> engineList = [
     "EC290BLC SN22345",
     "L180E SN21707",
@@ -17,7 +19,13 @@ class _EngineSearchState extends State<EngineSearch> {
     return Scaffold(
         body: Column(
       children: [
-        SizedBox(height: 50),
+        TextField(
+          controller: searchController,
+          decoration: InputDecoration(
+            border: InputBorder.none,
+          ),
+        ),
+        SizedBox(height: 30),
         Expanded(
           child: ListView.builder(
             itemCount: engineList.length,
