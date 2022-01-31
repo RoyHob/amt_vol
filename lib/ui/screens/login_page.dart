@@ -22,8 +22,7 @@ class LoginState extends State<Login> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          // Image.asset("lib/assets/amtrac.png"
-          // ),
+          Image.asset("lib/assets/amtrac.png"),
           const SizedBox(
             height: 20,
           ),
@@ -60,11 +59,9 @@ class LoginState extends State<Login> {
               border: const OutlineInputBorder(),
             ),
           ),
-
           const SizedBox(
             height: 20,
           ),
-
           ElevatedButton(
             style: ElevatedButton.styleFrom(
               primary: Colors.black,
@@ -75,7 +72,6 @@ class LoginState extends State<Login> {
               style: buttonText,
             ),
           ),
-
           const SizedBox(height: 12),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
