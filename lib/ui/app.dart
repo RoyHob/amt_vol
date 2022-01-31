@@ -22,9 +22,8 @@ class MyApp extends StatelessWidget {
       onGenerateRoute: (settings) {
         if (settings.name == engineSearchPage) {
           return MaterialPageRoute(builder: (context) => EngineSearch());
-
-          return MaterialPageRoute(builder: (context) => Login());
         }
+        return MaterialPageRoute(builder: (context) => Login());
       },
     );
   }
