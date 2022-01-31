@@ -26,9 +26,11 @@ class _EngineSearchState extends State<EngineSearch> {
 
 class CustomSearchDelegate extends SearchDelegate {
   List<String> searchTerms = [
-    "Apple",
-    "Banana",
-    "WaterMelon"
+    "EC290BLC SN22345",
+    "L180E SN21707",
+    "EC300DL SN2223",
+    "A35D SN48766",
+    "DD15 SN37836"
   ];
 
   @override
