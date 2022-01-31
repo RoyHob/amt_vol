@@ -20,7 +20,10 @@ class _EngineSearchState extends State<EngineSearch> {
         body: Column(
       children: [
         Container(
-          color: Colors.yellow,
+          decoration: BoxDecoration(
+            color: Colors.yellow,
+            borderRadius: BorderRadius.circular(30),
+          ),
           child: TextField(
             controller: searchController,
             decoration: InputDecoration(
