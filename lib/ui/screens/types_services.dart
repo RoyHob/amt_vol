@@ -15,7 +15,7 @@ class _TypeServiceState extends State<TypeService> {
       appBar: AppBar(
         leading: GestureDetector(
           child: Center(
-            child: Text("Back", style: TextStyle(fontSize: 10, color: Colors.black)),
+            child: Text("Back", style: TextStyle(fontSize: 10, color: Colors.grey)),
           ),
         ),
         backgroundColor: Colors.grey.withOpacity(0.2),
