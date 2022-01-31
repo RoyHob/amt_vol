@@ -19,10 +19,13 @@ class _EngineSearchState extends State<EngineSearch> {
     return Scaffold(
         body: Column(
       children: [
-        TextField(
-          controller: searchController,
-          decoration: InputDecoration(
-            border: InputBorder.none,
+        Container(
+          color: Colors.yellow,
+          child: TextField(
+            controller: searchController,
+            decoration: InputDecoration(
+              border: InputBorder.none,
+            ),
           ),
         ),
         SizedBox(height: 30),
