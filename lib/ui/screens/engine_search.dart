@@ -45,8 +45,10 @@ class _EngineSearchState extends State<EngineSearch> {
             ),
             child: TextField(
               controller: searchController,
+              textAlign: TextAlign.center,
               decoration: InputDecoration(
                 border: InputBorder.none,
+                hintText: "Search",
               ),
             ),
           ),
