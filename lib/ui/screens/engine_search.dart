@@ -35,7 +35,7 @@ class _EngineSearchState extends State<EngineSearch> {
         body: Column(
       children: [
         Container(
-          height: 10,
+          height: 50,
           decoration: BoxDecoration(
             color: Colors.yellow,
             borderRadius: BorderRadius.circular(30),
