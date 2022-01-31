@@ -19,6 +19,7 @@ class _EngineSearchState extends State<EngineSearch> {
     return Scaffold(
         body: Column(
       mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Container(
           decoration: BoxDecoration(
