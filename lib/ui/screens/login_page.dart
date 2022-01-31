@@ -77,12 +77,17 @@ class LoginState extends State<Login> {
           ),
 
           const SizedBox(height: 12),
-          SizedBox(
-            width: 50,
-            child: TextButton(
-              onPressed: () {},
-              child: const Text("Forget password?", style: TextStyle(color: Colors.black)),
-            ),
+          Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              SizedBox(
+                width: 50,
+                child: TextButton(
+                  onPressed: () {},
+                  child: const Text("Forget password?", style: TextStyle(color: Colors.black)),
+                ),
+              ),
+            ],
           )
         ],
       ),
