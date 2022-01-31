@@ -38,9 +38,11 @@ class _EngineSearchState extends State<EngineSearch> {
             itemBuilder: (context, index) {
               return Row(
                 children: [
-                  ListTile(
-                    title: Text(engineList[index]),
-                    leading: Icon(Icons.arrow_right),
+                  Expanded(
+                    child: ListTile(
+                      title: Text(engineList[index]),
+                      leading: Icon(Icons.arrow_right),
+                    ),
                   )
                 ],
               );
