@@ -40,7 +40,7 @@ class _EngineSearchState extends State<EngineSearch> {
           child: Container(
             height: 30,
             decoration: BoxDecoration(
-              color: Colors.grey,
+              color: Colors.grey.withOpacity(0.3),
               borderRadius: BorderRadius.circular(30),
             ),
             child: TextField(
