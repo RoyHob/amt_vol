@@ -34,6 +34,7 @@ class _EngineSearchState extends State<EngineSearch> {
     return Scaffold(
         body: Column(
       children: [
+        Text("AMTRAC Service", style:TextStyle(color: Colors.blue),textAlign: TextAlign.center,)
         Container(height: 100, width: 150, child: Image.asset("lib/assets/amtrac.png")),
         Padding(
           padding: const EdgeInsets.fromLTRB(12, 20, 12, 0),
