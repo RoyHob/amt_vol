@@ -62,9 +62,9 @@ class _EngineSearchState extends State<EngineSearch> {
             },
             separatorBuilder: (context, index) {
               return Divider(
-                thickness: 7,
+                thickness: 1,
                 height: 5,
-                color: Colors.black,
+                color: Colors.grey,
               );
             },
           ),
