@@ -14,7 +14,7 @@ class _TypeServiceState extends State<TypeService> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.grey.withOpacity(0.2),
-        titleTextStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+        titleTextStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 30),
         title: Text(widget.engineName),
       ),
     );
