@@ -13,7 +13,7 @@ class _TypeServiceState extends State<TypeService> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Text("Back"),
+        leading: Center(child: Text("Back")),
         backgroundColor: Colors.grey.withOpacity(0.2),
         titleTextStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
         title: Text(widget.engineName),
