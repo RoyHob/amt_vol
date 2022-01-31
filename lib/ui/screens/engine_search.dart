@@ -16,8 +16,8 @@ class _EngineSearchState extends State<EngineSearch> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
       children: [
+        SizedBox(height: 50),
         Expanded(
           child: ListView.builder(
             itemCount: engineList.length,
