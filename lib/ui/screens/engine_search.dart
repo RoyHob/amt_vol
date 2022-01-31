@@ -34,16 +34,19 @@ class _EngineSearchState extends State<EngineSearch> {
     return Scaffold(
         body: Column(
       children: [
-        Container(
-          height: 30,
-          decoration: BoxDecoration(
-            color: Colors.yellow,
-            borderRadius: BorderRadius.circular(30),
-          ),
-          child: TextField(
-            controller: searchController,
-            decoration: InputDecoration(
-              border: InputBorder.none,
+        Padding(
+          padding: const EdgeInsets.only(top: 10.0),
+          child: Container(
+            height: 30,
+            decoration: BoxDecoration(
+              color: Colors.yellow,
+              borderRadius: BorderRadius.circular(30),
+            ),
+            child: TextField(
+              controller: searchController,
+              decoration: InputDecoration(
+                border: InputBorder.none,
+              ),
             ),
           ),
         ),
