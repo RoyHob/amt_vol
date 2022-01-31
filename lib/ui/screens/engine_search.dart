@@ -38,6 +38,7 @@ class _EngineSearchState extends State<EngineSearch> {
             itemBuilder: (context, index) {
               return ListTile(
                 title: Text(engineList[index]),
+                trailing: Icon(Icons.arrow_right),
               );
             },
             separatorBuilder: (context, index) {
