@@ -36,20 +36,17 @@ class _EngineSearchState extends State<EngineSearch> {
       children: [
         Container(height: 100, width: 150, child: Image.asset("lib/assets/amtrac.png")),
         Padding(
-          padding: const EdgeInsets.only(top: 10.0),
+          padding: const EdgeInsets.fromLTRB(12, 20, 12, 0),
           child: Container(
             height: 30,
             decoration: BoxDecoration(
               color: Colors.grey,
               borderRadius: BorderRadius.circular(30),
             ),
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8.0),
-              child: TextField(
-                controller: searchController,
-                decoration: InputDecoration(
-                  border: InputBorder.none,
-                ),
+            child: TextField(
+              controller: searchController,
+              decoration: InputDecoration(
+                border: InputBorder.none,
               ),
             ),
           ),
