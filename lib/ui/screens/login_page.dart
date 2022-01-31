@@ -22,7 +22,7 @@ class LoginState extends State<Login> {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset("lib/assets/amtrac.png"),
+          Container(height: 100, width: 100, child: Image.asset("lib/assets/amtrac.png")),
           const SizedBox(
             height: 10,
           ),
