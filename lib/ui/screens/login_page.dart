@@ -1,6 +1,8 @@
 import 'package:amt_vol/constants/style.dart';
 import 'package:flutter/material.dart';
 
+import '../app.dart';
+
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
 
@@ -44,7 +46,6 @@ class LoginState extends State<Login> {
           TextField(
             controller: passController,
             obscureText: _textsecured,
-            keyboardType: TextInputType.number,
             decoration: InputDecoration(
               suffixIcon: IconButton(
                 onPressed: () {
@@ -67,7 +68,9 @@ class LoginState extends State<Login> {
             style: ElevatedButton.styleFrom(
               primary: Colors.black,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, engineSearchPage);
+            },
             child: const Text(
               "Sign in ",
               style: buttonText,

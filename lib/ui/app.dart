@@ -1,6 +1,10 @@
-
 import 'package:amt_vol/ui/screens/login_page.dart';
 import 'package:flutter/material.dart';
+
+import 'screens/engine_search.dart';
+
+final String logInPage = "/logInPage";
+final String engineSearchPage = "/engineSearchPage";
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -14,7 +18,18 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const Login(),
+      // home: const Login(),
+      initialRoute: logInPage,
+      onGenerateRoute: (settings) {
+        if (settings.arguments == engineSearchPage) {
+          return MaterialPageRoute(builder: (context) => EngineSearch());
+
+          // return  MaterialPageRoute(
+          //   builder:(context)=> Login()
+          // );
+
+        }
+      },
     );
   }
 }
