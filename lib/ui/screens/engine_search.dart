@@ -9,6 +9,7 @@ class _EngineSearchState extends State<EngineSearch> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: null,
         actions: [
           Icon(Icons.search)
         ],
