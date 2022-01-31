@@ -41,7 +41,7 @@ class _EngineSearchState extends State<EngineSearch> {
                   Expanded(
                     child: ListTile(
                       title: Text(engineList[index]),
-                      leading: Icon(Icons.arrow_right),
+                      trailing: Icon(Icons.arrow_right),
                     ),
                   )
                 ],
