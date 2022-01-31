@@ -26,7 +26,11 @@ class MyApp extends StatelessWidget {
           return MaterialPageRoute(builder: (context) => EngineSearch());
         }
         if (settings.name == typeService) {
-          return MaterialPageRoute(builder: (context) => TypeService());
+          final engineName = settings.arguments as String;
+          return MaterialPageRoute(
+              builder: (context) => TypeService(
+                    engineName: engineName,
+                  ));
         }
         return MaterialPageRoute(builder: (context) => Login());
       },

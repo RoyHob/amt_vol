@@ -76,7 +76,7 @@ class _EngineSearchState extends State<EngineSearch> {
                 children: [
                   ListTile(
                     onTap: () {
-                      Navigator.pushNamed(context, typeService);
+                      Navigator.pushNamed(context, typeService, arguments: engineList[index]);
                     },
                     title: Text(engineList[index]),
                     trailing: Icon(Icons.arrow_right),
