@@ -25,7 +25,7 @@ class LoginState extends State<Login> {
           // Image.asset("lib/assets/amtrac.png"
           // ),
           const SizedBox(
-            height: 40,
+            height: 20,
           ),
           const Text(
             "Sign in",
@@ -33,7 +33,7 @@ class LoginState extends State<Login> {
             textAlign: TextAlign.center,
           ),
           const SizedBox(
-            height: 20,
+            height: 40,
           ),
           TextField(
             controller: userController,
