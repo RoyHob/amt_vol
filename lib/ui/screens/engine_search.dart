@@ -5,90 +5,27 @@ class EngineSearch extends StatefulWidget {
 }
 
 class _EngineSearchState extends State<EngineSearch> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        actions: [
-          IconButton(
-              onPressed: () {
-                showSearch(
-                  context: context,
-                  delegate: CustomSearchDelegate(),
-                );
-              },
-              icon: Icon(Icons.search)),
-        ],
-      ),
-    );
-  }
-}
-
-class CustomSearchDelegate extends SearchDelegate {
-  List<String> searchTerms = [
+  List<String> engineList = [
     "EC290BLC SN22345",
     "L180E SN21707",
     "EC300DL SN2223",
     "A35D SN48766",
     "DD15 SN37836"
   ];
-
   @override
-  List<Widget> buildActions(BuildContext context) {
-    return [
-      IconButton(
-          icon: Icon(Icons.clear),
-          onPressed: () {
-            query:
-            '';
-          })
-    ];
-  }
-
-  @override
-  Widget buildLeading(BuildContext context) {
-    return IconButton(
-        icon: Icon(Icons.arrow_left),
-        onPressed: () {
-          close(context, null);
-        });
-  }
-
-  @override
-  Widget buildResults(BuildContext context) {
-    List<String> matchQuery = [];
-    for (var fruit in searchTerms) {
-      if (fruit.toLowerCase().contains(query.toLowerCase())) {
-        matchQuery.add(fruit);
-      }
-    }
-    return ListView.builder(
-      itemCount: matchQuery.length,
+  Widget build(BuildContext context) {
+    return Scaffold(
+        body: ListView.builder(
+      itemCount: engineList.length,
       itemBuilder: (context, index) {
-        var result = matchQuery[index];
-        return ListTile(
-          title: Text(result),
+        return Row(
+          children: [
+            Text(engineList[index]),
+            Spacer(),
+            Icon(Icons.arrow_right),
+          ],
         );
       },
-    );
-  }
-
-  @override
-  Widget buildSuggestions(BuildContext context) {
-    List<String> matchQuery = [];
-    for (var fruit in searchTerms) {
-      if (fruit.toLowerCase().contains(query.toLowerCase())) {
-        matchQuery.add(fruit);
-      }
-    }
-    return ListView.builder(
-      itemCount: matchQuery.length,
-      itemBuilder: (context, index) {
-        var result = matchQuery[index];
-        return ListTile(
-          title: Text(result),
-        );
-      },
-    );
+    ));
   }
 }
