@@ -17,7 +17,17 @@ class _EngineSearchState extends State<EngineSearch> {
     "L180E SN21707",
     "EC300DL SN2223",
     "A35D SN48766",
-    "DD15 SN37836"
+    "DD15 SN37836",
+    "EC290BLC SN22345",
+    "L180E SN21707",
+    "EC300DL SN2223",
+    "A35D SN48766",
+    "DD15 SN37836",
+    "EC290BLC SN22345",
+    "L180E SN21707",
+    "EC300DL SN2223",
+    "A35D SN48766",
+    "DD15 SN37836",
   ];
   @override
   Widget build(BuildContext context) {
