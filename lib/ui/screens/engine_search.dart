@@ -18,8 +18,6 @@ class _EngineSearchState extends State<EngineSearch> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Container(
           decoration: BoxDecoration(
@@ -40,7 +38,10 @@ class _EngineSearchState extends State<EngineSearch> {
             itemBuilder: (context, index) {
               return Row(
                 children: [
-                  Text(engineList[index]),
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(engineList[index]),
+                  ),
                   Spacer(),
                   Icon(Icons.arrow_right),
                 ],
