@@ -44,8 +44,8 @@ class LoginState extends State<Login> {
           TextField(
             controller: passController,
             obscureText: _textsecured,
+            keyboardType: TextInputType.number,
             decoration: InputDecoration(
-              focusColor: Colors.yellow,
               suffixIcon: IconButton(
                 onPressed: () {
                   setState(() {
@@ -75,6 +75,7 @@ class LoginState extends State<Login> {
           ),
           const SizedBox(height: 12),
           Column(
+            //! how to do it without a column  =>  have the textbutton centered  ?!
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SizedBox(
