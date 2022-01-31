@@ -67,7 +67,6 @@ class CustomSearchDelegate extends SearchDelegate {
       itemBuilder: (context, index) {
         var result = matchQuery[index];
         return ListTile(
-          leading: Icon(Icons.arrow_right),
           title: Text(result),
         );
       },
