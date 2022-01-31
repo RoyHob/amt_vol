@@ -44,7 +44,6 @@ class _EngineSearchState extends State<EngineSearch> {
                       trailing: Icon(Icons.arrow_right),
                     ),
                   ),
-                  Divider(),
                 ],
               );
             },
