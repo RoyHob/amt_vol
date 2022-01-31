@@ -38,12 +38,10 @@ class _EngineSearchState extends State<EngineSearch> {
             itemBuilder: (context, index) {
               return Row(
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.all(12.0),
-                    child: Text(engineList[index]),
-                  ),
-                  Spacer(),
-                  Icon(Icons.arrow_right),
+                  ListTile(
+                    title: Text(engineList[index]),
+                    leading: Icon(Icons.arrow_right),
+                  )
                 ],
               );
             },
