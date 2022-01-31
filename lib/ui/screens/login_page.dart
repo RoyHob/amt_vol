@@ -19,8 +19,8 @@ class LoginState extends State<Login> {
         body: Padding(
       padding: const EdgeInsets.symmetric(horizontal: 50),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        mainAxisAlignment: MainAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch, //! this is neccesary to have a sign in button streched  ???
+        mainAxisAlignment: MainAxisAlignment.center, // for the spacing for different size of screens ?  what to do  ?
         children: [
           Container(height: 200, width: 200, child: Image.asset("lib/assets/amtrac.png")),
           const SizedBox(
@@ -45,6 +45,7 @@ class LoginState extends State<Login> {
             controller: passController,
             obscureText: _textsecured,
             decoration: InputDecoration(
+              focusColor: Colors.yellow,
               suffixIcon: IconButton(
                 onPressed: () {
                   setState(() {
