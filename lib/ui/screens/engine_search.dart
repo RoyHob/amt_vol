@@ -51,9 +51,14 @@ class _EngineSearchState extends State<EngineSearch> {
           child: ListView.separated(
             itemCount: engineList.length,
             itemBuilder: (context, index) {
-              return ListTile(
-                title: Text(engineList[index]),
-                trailing: Icon(Icons.arrow_right),
+              return Column(
+                children: [
+                  ListTile(
+                    title: Text(engineList[index]),
+                    trailing: Icon(Icons.arrow_right),
+                  ),
+                  Divider(),
+                ],
               );
             },
             separatorBuilder: (context, index) {
