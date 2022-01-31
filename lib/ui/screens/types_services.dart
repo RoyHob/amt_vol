@@ -14,6 +14,9 @@ class _TypeServiceState extends State<TypeService> {
     return Scaffold(
       appBar: AppBar(
         leading: GestureDetector(
+          onTap: () {
+            Navigator.pop(context);
+          },
           child: Center(
             child: Text("Back", style: TextStyle(fontSize: 15, color: Colors.grey)),
           ),
