@@ -38,7 +38,7 @@ class _EngineSearchState extends State<EngineSearch> {
         Padding(
           padding: const EdgeInsets.fromLTRB(12, 20, 12, 0),
           child: Container(
-            height: 30,
+            height: 25,
             decoration: BoxDecoration(
               color: Colors.grey.withOpacity(0.3),
             ),
