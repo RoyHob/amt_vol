@@ -2,9 +2,11 @@ import 'package:amt_vol/ui/screens/login_page.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/engine_search.dart';
+import 'screens/types_services.dart';
 
 final String logInPage = "/logInPage";
 final String engineSearchPage = "/engineSearchPage";
+final String typeService = "/typeService";
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -22,6 +24,9 @@ class MyApp extends StatelessWidget {
       onGenerateRoute: (settings) {
         if (settings.name == engineSearchPage) {
           return MaterialPageRoute(builder: (context) => EngineSearch());
+        }
+        if (settings.name == typeService) {
+          return MaterialPageRoute(builder: (context) => TypeService());
         }
         return MaterialPageRoute(builder: (context) => Login());
       },

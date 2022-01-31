@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../app.dart';
+
 class EngineSearch extends StatefulWidget {
   _EngineSearchState createState() => _EngineSearchState();
 }
@@ -73,6 +75,9 @@ class _EngineSearchState extends State<EngineSearch> {
               return Column(
                 children: [
                   ListTile(
+                    onTap: () {
+                      Navigator.pushNamed(context, typeService);
+                    },
                     title: Text(engineList[index]),
                     trailing: Icon(Icons.arrow_right),
                   ),
