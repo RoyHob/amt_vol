@@ -16,7 +16,7 @@ class _TypeServiceState extends State<TypeService> {
         leading: Center(child: Text("Back")),
         backgroundColor: Colors.grey.withOpacity(0.2),
         titleTextStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
-        title: Text(widget.engineName),
+        title: Center(child: Text(widget.engineName)),
       ),
     );
   }
