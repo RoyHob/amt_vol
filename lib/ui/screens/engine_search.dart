@@ -18,17 +18,19 @@ class _EngineSearchState extends State<EngineSearch> {
         body: Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        ListView.builder(
-          itemCount: engineList.length,
-          itemBuilder: (context, index) {
-            return Row(
-              children: [
-                Text(engineList[index]),
-                Spacer(),
-                Icon(Icons.arrow_right),
-              ],
-            );
-          },
+        SingleChildScrollView(
+          child: ListView.builder(
+            itemCount: engineList.length,
+            itemBuilder: (context, index) {
+              return Row(
+                children: [
+                  Text(engineList[index]),
+                  Spacer(),
+                  Icon(Icons.arrow_right),
+                ],
+              );
+            },
+          ),
         ),
       ],
     ));
