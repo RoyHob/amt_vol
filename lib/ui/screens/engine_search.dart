@@ -43,10 +43,13 @@ class _EngineSearchState extends State<EngineSearch> {
               color: Colors.grey,
               borderRadius: BorderRadius.circular(30),
             ),
-            child: TextField(
-              controller: searchController,
-              decoration: InputDecoration(
-                border: InputBorder.none,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: TextField(
+                controller: searchController,
+                decoration: InputDecoration(
+                  border: InputBorder.none,
+                ),
               ),
             ),
           ),
