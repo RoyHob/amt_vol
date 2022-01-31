@@ -18,14 +18,17 @@ class _EngineSearchState extends State<EngineSearch> {
         body: ListView.builder(
       itemCount: engineList.length,
       itemBuilder: (context, index) {
-        return Center(
-          child: Row(
-            children: [
-              Text(engineList[index]),
-              Spacer(),
-              Icon(Icons.arrow_right),
-            ],
-          ),
+        return Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Row(
+              children: [
+                Text(engineList[index]),
+                Spacer(),
+                Icon(Icons.arrow_right),
+              ],
+            ),
+          ],
         );
       },
     ));
