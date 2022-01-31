@@ -32,23 +32,34 @@ class _EngineSearchState extends State<EngineSearch> {
           ),
         ),
         SizedBox(height: 30),
-        Expanded(
-          child: ListView.builder(
-            itemCount: engineList.length,
-            itemBuilder: (context, index) {
-              return Row(
-                children: [
-                  Expanded(
-                    child: ListTile(
-                      title: Text(engineList[index]),
-                      trailing: Icon(Icons.arrow_right),
-                    ),
-                  ),
-                ],
-              );
-            },
-          ),
-        ),
+        ListView.separated(
+          itemCount: 100,
+          itemBuilder: (context, index) {
+            return ListTile(
+              title: Text('$index sheep'),
+            );
+          },
+          separatorBuilder: (context, index) {
+            return Divider();
+          },
+        )
+        // Expanded(
+        //   child: ListView.builder(
+        //     itemCount: engineList.length,
+        //     itemBuilder: (context, index) {
+        //       return Row(
+        //         children: [
+        //           Expanded(
+        //             child: ListTile(
+        //               title: Text(engineList[index]),
+        //               trailing: Icon(Icons.arrow_right),
+        //             ),
+        //           ),
+        //         ],
+        //       );
+        //     },
+        //   ),
+        // ),
       ],
     ));
   }
