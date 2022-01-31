@@ -41,7 +41,9 @@ class _EngineSearchState extends State<EngineSearch> {
               );
             },
             separatorBuilder: (context, index) {
-              return Divider();
+              return Divider(
+                height: 5,
+              );
             },
           ),
         )
