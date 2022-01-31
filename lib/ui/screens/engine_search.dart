@@ -32,16 +32,18 @@ class _EngineSearchState extends State<EngineSearch> {
           ),
         ),
         SizedBox(height: 30),
-        ListView.separated(
-          itemCount: 100,
-          itemBuilder: (context, index) {
-            return ListTile(
-              title: Text('$index sheep'),
-            );
-          },
-          separatorBuilder: (context, index) {
-            return Divider();
-          },
+        Expanded(
+          child: ListView.separated(
+            itemCount: 100,
+            itemBuilder: (context, index) {
+              return ListTile(
+                title: Text('$index sheep'),
+              );
+            },
+            separatorBuilder: (context, index) {
+              return Divider();
+            },
+          ),
         )
         // Expanded(
         //   child: ListView.builder(
