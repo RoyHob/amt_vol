@@ -37,11 +37,7 @@ class LoginState extends State<Login> {
           ),
           TextField(
             controller: userController,
-            decoration: const InputDecoration(
-                labelText: "Username",
-                hintText: "Username",
-                contentPadding: EdgeInsets.all(20.0),
-                border: OutlineInputBorder()),
+            decoration: const InputDecoration(labelText: "Username", hintText: "Username", contentPadding: EdgeInsets.all(20.0), border: OutlineInputBorder()),
           ),
           const SizedBox(
             height: 20,
@@ -56,9 +52,7 @@ class LoginState extends State<Login> {
                     _textsecured = !_textsecured;
                   });
                 },
-                icon: Icon(_textsecured
-                    ? Icons.remove_red_eye_rounded
-                    : Icons.password),
+                icon: Icon(_textsecured ? Icons.remove_red_eye_rounded : Icons.pause_presentation_outlined),
               ),
               contentPadding: const EdgeInsets.all(20.0),
               labelText: "Password",
@@ -87,8 +81,7 @@ class LoginState extends State<Login> {
             width: 150,
             child: TextButton(
               onPressed: () {},
-              child: const Text("Forget password?",
-                  style: TextStyle(color: Colors.black)),
+              child: const Text("Forget password?", style: TextStyle(color: Colors.black)),
             ),
           )
         ],
@@ -96,5 +89,3 @@ class LoginState extends State<Login> {
     ));
   }
 }
-
-
