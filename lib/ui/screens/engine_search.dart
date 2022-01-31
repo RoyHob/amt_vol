@@ -47,6 +47,7 @@ class _EngineSearchState extends State<EngineSearch> {
               controller: searchController,
               textAlign: TextAlign.center,
               decoration: InputDecoration(
+                prefixIcon: Icon(Icons.search),
                 border: InputBorder.none,
                 hintText: "Search",
               ),
