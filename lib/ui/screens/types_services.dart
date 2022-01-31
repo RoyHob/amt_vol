@@ -13,10 +13,14 @@ class _TypeServiceState extends State<TypeService> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: Center(child: Text("Back")),
+        leading: GestureDetector(
+          child: Center(
+            child: Text("Back", style: TextStyle(fontSize: 20, color: Colors.black)),
+          ),
+        ),
         backgroundColor: Colors.grey.withOpacity(0.2),
         titleTextStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
-        title: Center(child: Text(widget.engineName)),
+        title: Text(widget.engineName),
       ),
     );
   }
