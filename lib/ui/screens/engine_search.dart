@@ -7,6 +7,10 @@ class EngineSearch extends StatefulWidget {
 class _EngineSearchState extends State<EngineSearch> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+        leading: Icon(Icons.search),
+      ),
+    );
   }
 }
